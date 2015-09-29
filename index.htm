@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/range.js"></script>
+  
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body ng-app="myApp">
+
+<div ng-controller="myCtrl">
+
+    <input type="range" ng-model="pitch" min="0" max="4" step="1" ng-change="change()" />
+
+    <p ng-bind="name"></p>
+
+</div>
+
+</body>
+</html>
